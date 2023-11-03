@@ -18,22 +18,50 @@ p {
     color: rgb(85,85,85);
 }
 
+@keyframes animate{
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
 /* transitions */
 
 a, .btn{
     transition: all 300ms ease;
 }
-
+@keyframes fade-down{
+    0% {
+        opacity : 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity : 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-up{
+    0% {
+        opacity : 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity : 1;
+        transform: translateY(0px) scale(1);
+    }
+}
 /* navbar desktop */
 nav, .nav-links{
     display: flex;
+    animation: fade-down 0.5s;
 }
 
 nav{
     justify-content: space-around;
     align-items: center;
     height:17vh;
-    position :top;
 }
 .nav-links{
     gap: 2rem;
@@ -49,7 +77,7 @@ a:hover{
     color: wheat;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: wheat;
+    text-decoration-color: whea;
 }
 .logo{
     font-size: 2rem;
@@ -141,6 +169,7 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    animation: fade-up 0.5s;
 }
 .section-pic-container{
     display: flex;
@@ -157,6 +186,7 @@ section{
 }
 .section-text-p1{
     text-align: center;
+    font-size: 1.25rem;
 }
 .section-text-p2{
     font-size: 1.75rem;
@@ -318,7 +348,7 @@ article .icon{
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
-    background: antiquewhite;
+    background: white;
     margin: 2rem auto;
     padding: 0.5rem;
 }
