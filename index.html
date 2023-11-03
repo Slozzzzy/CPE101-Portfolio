@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Thanatat A.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile"></a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#education"> Education</a></li>
+                <li><a href="#skill"> Skill</a></li>
+                <li><a href="#contact"> Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Thanatat Aunjatturaporn</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()"> About</a></li>
+                <li><a href="#education"onclick="toggleMenu()"> Education</a></li>
+                <li><a href="#skill"onclick="toggleMenu()"> Skill</a></li>
+                <li><a href="#contact"onclick="toggleMenu()"> Contacts</a></li>
+                </div>
+            </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic.jpeg" alt="Thanatat Profile Picture" style="border-radius : 50%">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hey There, I'm</p>
+            <h1 class="title">Thanatat Aunjatturaporn</h1>
+            <p class="section-text-p2">A Happy Computer Engineering Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='#contact'">Contacts</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/facebook_1384005.png" alt="Facebook" class="icon" onclick="location.href='https://www.facebook.com/veeeeeews/'" >
+                <img src="./assets/github.png" alt="Github" class="icon" onclick="location.href='https://www.github.com/Slozzzzy'" >
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section-pic-container">
+            <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic"/>
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="./assets/experience.png" alt="Experience icon"class="icon"/>
+                <h3>Experience</h3>
+                <p>1+ years <br />Programming</p>
+              </div>
+              <div class="details-container">
+                <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                <h3>Education</h3>
+                <p>B.Eng. Computer Engineering KMUTT <br>Undergraduate</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>I'm Thanatat Aunjatturaporn, an 18 year old boy studying at KMUTT. I have passion for Computer-
+                related fields of studying. I have learned basic Ruby for the past year and currently looking forward to
+                applying those knowledge to Rails. I'm currently studying C language as of my CPE100 Computer Programming
+                course. I have gained priceless knowledge of doing several projects that involves software and hardware.
+                My goal is to be a Game Developer or a Cyber Security in the future, who knows which path I'll end up doing?
+                Only the time will tell.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'"/>
+    </section>
+    <section id="education">
+        <p class="section-text-p1">What I have learned</p>
+        <h1 class="title">Education</h1>
+        <div class="skill-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="skill-sub-title">The Education System</h2>
+              <div class="article-edu-container">
+                <article class ="article">
+                  <img src="./assets/book.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Charuwattananukul School</h3>
+                    <p>2014 - 2017</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/book.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Wat Raja-O-Ros School</h3>
+                    <p>2017 - 2020</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/book.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Bangpakok Witthayakom School</h3>
+                    <p>2020 - 2023</p>
+                  </div>
+                </article>
+                <article>
+                    <img src="./assets/book.png" alt="Experience icon" class="icon"/>
+                    <div>
+                      <h3>Computer Engineering, KMUTT</h3>
+                      <p>2023 - Present</p>
+                    </div>
+                  </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skill-sub-title">Outside The Classroom</h2>
+              <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                    <div>
+                      <h3>42 Bangkok Discovery Piscine, KMITL</h3>
+                    </div>
+                  </article>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>Istituto Calvino Rozzano, Italy</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>Codewars Kata 6 Kyu</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>Khan Academy</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png"alt="Arrow icon"class="icon arrow"onclick="location.href='./#skill'"/>
+      </section>
+    <section id="skill">
+        <p class="section-text-p1">See what I can do</p>
+        <h1 class="title">Skills</h1>
+        <div class="skill-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="skill-sub-title">Programming Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Ruby</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>C</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>Ruby on Rails</h3>
+                    <p>Beginner</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skill-sub-title">Soft Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Adaptability</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>Confidence</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>Situational Awareness</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>Time Management</h3>
+                  </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
+                    <div>
+                      <h3>Taking Responsibility</h3>
+                    </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png"alt="Arrow icon"class="icon arrow"onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email" class="icon contact-icon email-icon">
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=thanatat.aun@gmail.com&amp;su=SUBJECT&amp;body=BODY" target="_blank"><i class="fa-solid fa-envelope"></i> thanatat.aun@gmail.com</a>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/github.png" alt="github" class="icon contact-icon">
+                <p><a href="https://www.github.com/Slozzzzy" target="_blank">Github</a></p>
+            </div>
+        </div>
+        <h1 class="not-title">"Nulla tenaci invia est via"</h1>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile"></a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#education"> Education</a></li>
+                    <li><a href="#skill"> Skill</a></li>
+                    <li><a href="#contact"> Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Thanatat A. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
